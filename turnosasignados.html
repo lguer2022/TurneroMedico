@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="js/credenciales.js"></script>
+	<script src="js/index.js" defer></script>
+	<script async defer src="js/sheets.js"></script>
+
+
+	<title>TURNERO CONSULTORIO COMUNITARIO</title>
+</head>
+<body>
+	<header>
+		<h1>Turnos siguientes</h1>
+	</header>
+	<main>
+		<div id="turnosContainer"></div>
+		<div id="detalleContainer" class="escondido">
+			<h2 id="cliente">Apellido y Nombre</h2>
+			<p>Telefono: <span id="telefono"></span></p>
+			<p>Sintomas: <span id="sintomas"></span></p>
+			<div>
+				<label for="comentario">Indicación médica: </label>
+				<input name="comentario" id="comentario"></input>
+				<label for="comentario">Prescripción médica: </label>
+				<input name="comentario2" id="comentario2"></input>
+			</div>
+			<button id="finalizar">Marcar finalizado</button>
+		</div>
+	</main>
+
+
+ 
+ <!-- Autenticacion -->
+
+	<button id="authorize_button" onclick="handleAuthClick()">Autorizar</button>
+	<button id="signout_button" onclick="handleSignoutClick()">Salir (Sign Out)</button>
+    <script async defer src="https://apis.google.com/js/api.js" id="gapi"></script>
+    <script async defer src="https://accounts.google.com/gsi/client" id="gis"></script>
+	<script async defer src="js/auth.js"></script>
+	
+</body>
+</html>

@@ -63,6 +63,34 @@
     margin: 0;
   }
   
+  
+/* TARJETAS DE ATENDIDOS */
+.tarjeta2{
+  border: 1px solid var(--color-fondo);
+  max-width: 350px;
+  padding: 10px;
+  background-color: var(--color-fondo-tarjeta);
+  user-select: none;
+  cursor: pointer;
+}
+.tarjeta2:hover, .tarjeta2.seleccionado{
+  background-color: var(--color-acento);
+  color: var(--color-fondo);
+}
+
+.tarjeta2:hover h3, .tarjeta2.seleccionado h3{
+  color: var(--color-fondo);
+}
+
+.tarjeta2 p{
+  White-Space: nowrap;
+  overflow: hidden;
+  Text-overflow: ellipsis;
+}
+
+
+
+
   #detalleContainer{
     background-color: var(--color-fondo-tarjeta);
     padding:10px

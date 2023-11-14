@@ -5,7 +5,7 @@ let indiceSeleccionado;
 
 function createTarjeta(turno,index) {
   const nuevaTarjeta = document.createElement("div");
-  nuevaTarjeta.classList = "tarjeta";
+  nuevaTarjeta.classList = "tarjeta2";
   nuevaTarjeta.innerHTML = `
     <h3>${turno.cliente}</h3>
     <p>Email: ${turno.email}</p>
@@ -29,7 +29,7 @@ function actualizarTarjetas() {
 }
 
 function actualizarDetalle(index){
-  if(indiceSeleccionado !== undefined) turnosContainer.children[indiceSeleccionado].classList.toggle("seleccionado",false);
+  if(indiceSeleccionado == undefined) turnosContainer.children[indiceSeleccionado].classList.toggle("seleccionado",false);
   clienteElement.innerText = turnos[index].cliente;
   telefonoElement.innerText = turnos[index].telefono;
   sintomasElement.innerText = turnos[index].sintomas;

@@ -93,13 +93,13 @@
 
   #detalleContainer{
     background-color: var(--color-fondo-tarjeta);
-    padding:10px;
+    padding:10px
   }
   #detalleContainer div{
-    margin-bottom:10px;
+    margin-bottom:10px
   }
   #detalleContainer input{
-    padding:5px;
+    padding:5px
   }
   
   .escondido{
